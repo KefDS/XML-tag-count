@@ -1,0 +1,266 @@
+<?xml version='1.0'?>
+<PLAN>
+ <TITLE>Ciencias de la Computacion e Informatica</TITLE>
+ <NIVEL id="1">
+    <CURSO>
+       <SIGLA> CI1010 </SIGLA>
+       <NOMBRE> Introducción a Computación e Informatica </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> LM1030 </SIGLA>
+       <NOMBRE> Ingles Intensivo I</NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> EG0124 </SIGLA>
+       <NOMBRE> Humanidades I</NOMBRE>
+       <CREDITOS> 6 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> MA0129 </SIGLA>
+       <NOMBRE> Matematica para Computacion I</NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> EF </SIGLA>
+       <NOMBRE> Actividad Deportiva </NOMBRE>
+       <CREDITOS> 0 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+ <NIVEL id="2">
+    <CURSO>
+       <SIGLA> CI1101 </SIGLA>
+       <NOMBRE> Programación I </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1010"> </REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1204 </SIGLA>
+       <NOMBRE> Estructuras Discretas Aplicadas II </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="MA0129"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> EG0125 </SIGLA>
+       <NOMBRE> Humanidades II </NOMBRE>
+       <CREDITOS> 6 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> MA0229 </SIGLA>
+       <NOMBRE> Matematica para Computacion II </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="MA0129"></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+ <NIVEL id="3">
+    <CURSO>
+       <SIGLA> CI1201 </SIGLA>
+       <NOMBRE> Programación II </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1101"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1210 </SIGLA>
+       <NOMBRE> Diseno de Circuitos Digitales </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1101" r2="CI1204" ></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1211 </SIGLA>
+       <NOMBRE> Lab. Diseno de Circuitos Digitales </NOMBRE>
+       <CREDITOS> 1 </CREDITOS>
+       <REQUISITOS r1="CI1101" r2="CI1204" ></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> MA0329 </SIGLA>
+       <NOMBRE> Matematica para Computacion III </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="MA0229"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> SR-  I </SIGLA>
+       <NOMBRE> Seminario de Realidad Nacional I </NOMBRE>
+       <CREDITOS> 2 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> EG ART </SIGLA>
+       <NOMBRE> Actividad Artistica </NOMBRE>
+       <CREDITOS> 2 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+ <NIVEL id="4">
+    <CURSO>
+       <SIGLA> CI1220 </SIGLA>
+       <NOMBRE> Ensambladores y Microprocesadores </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1201"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1221 </SIGLA>
+       <NOMBRE> Estructuras de Datos y Analisis de Algoritmos </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1201" r2="CI1204" ></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1352 </SIGLA>
+       <NOMBRE> Investigacion de Operaciones I </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="MA0329" r2="CI1204" ></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> MA0429 </SIGLA>
+       <NOMBRE> Matematica para Computacion IV </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="MA0329"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> SR- II </SIGLA>
+       <NOMBRE> Seminario de Realidad Nacional II </NOMBRE>
+       <CREDITOS> 2 </CREDITOS>
+       <REQUISITOS r1="S.R.N. I"></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+ <NIVEL id="5">
+    <CURSO>
+       <SIGLA> CI1310 </SIGLA>
+       <NOMBRE> Sistemas Operativos </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1220" r2="CI1221"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1311 </SIGLA>
+       <NOMBRE> Lab. Sistemas Operativos </NOMBRE>
+       <CREDITOS> 1 </CREDITOS>
+       <REQUISITOS r1="CI1220" r2="CI1221"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1312 </SIGLA>
+       <NOMBRE> Bases de Datos I </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1221"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1313 </SIGLA>
+       <NOMBRE> Lab. Bases de Datos I </NOMBRE>
+       <CREDITOS> 1 </CREDITOS>
+       <REQUISITOS r1="CI1221"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1453 </SIGLA>
+       <NOMBRE> Investigacion de Operaciones III </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1352"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> EG REP </SIGLA>
+       <NOMBRE> Repertorio </NOMBRE>
+       <CREDITOS> 3 </CREDITOS>
+       <REQUISITOS></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+ <NIVEL id="6">
+    <CURSO>
+       <SIGLA> CI1322 </SIGLA>
+       <NOMBRE> Automatas y Compiladores </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1220" r2="CI1221"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1320 </SIGLA>
+       <NOMBRE> Redes de Computadoras </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1453" r2="CI1221"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1321 </SIGLA>
+       <NOMBRE> Laboratorio de Redes de Computadoras </NOMBRE>
+       <CREDITOS> 1 </CREDITOS>
+       <REQUISITOS r1="CI1453" r2="CI1221"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1323 </SIGLA>
+       <NOMBRE> Arquitecturas de Computadoras </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1210" r2="CI1211" r3="CI1310" r4="CI1311" ></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1330 </SIGLA>
+       <NOMBRE> Ingenieria de Software </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1312" r2="CI1313"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1331 </SIGLA>
+       <NOMBRE> Lab. Ingenieria de Software </NOMBRE>
+       <CREDITOS> 1 </CREDITOS>
+       <REQUISITOS r1="CI1312" r2="CI1313"></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+ <NIVEL id="7">
+    <CURSO>
+       <SIGLA> CI1441 </SIGLA>
+       <NOMBRE> Paradigmas Computacionales </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1322"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI </SIGLA>
+       <NOMBRE> Electiva </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="Establecidos por curso"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI </SIGLA>
+       <NOMBRE> Electiva </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="Establecidos por curso"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1430 </SIGLA>
+       <NOMBRE> Ingenieria de Software </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1330" r2="CI1331"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI1431 </SIGLA>
+       <NOMBRE> Lab. Ingenieria de Software </NOMBRE>
+       <CREDITOS> 1 </CREDITOS>
+       <REQUISITOS r1="CI1330" r2="CI1331"></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+ <NIVEL id="8">
+    <CURSO>
+       <SIGLA> CI1440 </SIGLA>
+       <NOMBRE> Informatica y Sociedad </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="CI1330" r2="S.R.N. II"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI </SIGLA>
+       <NOMBRE> Electiva </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="Establecidos por curso"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI </SIGLA>
+       <NOMBRE> Electiva </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="Establecidos por curso"></REQUISITOS>
+    </CURSO>
+    <CURSO>
+       <SIGLA> CI </SIGLA>
+       <NOMBRE> Electiva </NOMBRE>
+       <CREDITOS> 4 </CREDITOS>
+       <REQUISITOS r1="Establecidos por curso"></REQUISITOS>
+    </CURSO>
+ </NIVEL>
+</PLAN>

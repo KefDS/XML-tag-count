@@ -1,0 +1,455 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrartcl
+\begin_preamble
+\usepackage{fancyhdr}
+\date{}
+
+\usepackage{color}
+\definecolor{Cgray}{gray}{.20}  %Para codigo (Comentario)
+\definecolor{Bgray}{gray}{.92}  %Para codigo (Fondo)
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+endnotes
+foottoend
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman lmodern
+\font_sans helvet
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=black, citecolor=black, urlcolor=blue, filecolor=blue"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "aboveskip={0.5cm},backgroundcolor={\color{Bgray}},commentstyle={\color{Cgray}},frame=Ltb,framerule=0pt,framesep=0pt,framexbottommargin=3pt,framexleftmargin={0.4cm},framextopmargin=3pt,keywordstyle={\bfseries},numberfirstline=false,numbersep=15pt,rulesep={.4pt},rulesepcolor={\color{black}},stringstyle={\ttfamily}"
+\bullet 0 2 21 0
+\bullet 1 0 8 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+\begin_inset Graphics
+	filename Imagenes/UCR.png
+	lyxscale 50
+	display false
+	width 33text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+\begin_inset Graphics
+	filename Imagenes/ECCI.png
+	lyxscale 25
+	display false
+	width 33text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+CI-1310 Sistemas Operativos
+\begin_inset Newline newline
+\end_inset
+
+II ciclo 2014
+\begin_inset Newline newline
+\end_inset
+
+Grupo 1
+\begin_inset Newline newline
+\end_inset
+
+Profesor: Francisco Arroyo Mora
+\end_layout
+
+\begin_layout Subtitle
+Documentación Tarea Programada I
+\end_layout
+
+\begin_layout Author
+Kevin Delgado Sandí B22214
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{fancy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Enunciado de la tarea
+\end_layout
+
+\begin_layout Subsection
+Objetivos
+\end_layout
+
+\begin_layout Standard
+El objetivo de esta tarea es que el estudiante aplique los conceptos adquiridos
+ sobre los tópicos de comunicación entre procesos, particularmente aquellos
+ concernientes a comunicación mediante semáforos, memoria compartida y paso
+ de mensajes.
+\end_layout
+
+\begin_layout Subsection
+Descripción
+\end_layout
+
+\begin_layout Itemize
+El estudiante debe desarrollar un programa en el lenguaje de programación
+ C, orientado al sistema operativo UNIX y utilizar todas las facilidades
+ para la comunicación entre procesos (IPC) en ese ambiente
+\end_layout
+
+\begin_layout Itemize
+Debe construirse un programa que creará un número determinado de procesos
+ (
+\family typewriter
+fork
+\family default
+) que le ayudarán a completar su tarea
+\end_layout
+
+\begin_layout Itemize
+La función de este utilitario es la de contar el numero de palabras distintas
+ que sean marcas (delimitadas por "<" y">"), y la cantidad de veces que
+ aparecen, en una cantidad determinada de archivos con formato XML, semejante
+ a la primera tarea programada, pero esta vez con varios archivos
+\end_layout
+
+\begin_layout Itemize
+La sintaxis del programa es la siguiente:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+\size footnotesize
+Contar [-t] Nombre_Archivo1 Nombre_Archivo2...
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+El proceso principal creará (
+\family typewriter
+fork
+\family default
+) tantos procesos hijos como nombres de archivos se haya especificado, de
+ tal manera que cada hijo se encargue de enviar los resultados (palabras
+ y cantidad) de un archivo únicamente
+\end_layout
+
+\begin_layout Itemize
+Además creará otro hijo (
+\family typewriter
+impresor
+\family default
+) para producir la salida del programa
+\end_layout
+
+\begin_layout Itemize
+Cada uno de los hijos abrirá el archivo correspondiente, asignado por el
+ proceso principal, y comenzará a enviar la marca y las veces que aparece
+ al proceso principal, utilizando para ello paso de mensajes
+\end_layout
+
+\begin_layout Itemize
+El proceso principal recibirá los mensajes enviados por sus hijos, acumulará
+ el numero de veces que aparezca la misma marca en varios archivos y almacenará
+ la palabra y su número total de apariciones en un área de datos compartida
+ (
+\emph on
+shared memory
+\emph default
+) con el proceso impresor
+\end_layout
+
+\begin_layout Itemize
+Una vez que el proceso principal completa todas las palabras que comienzan
+ con una misma letra, permitirá al proceso impresor continuar (
+\emph on
+semáforo
+\emph default
+), tomar la información y hacer su trabajo
+\end_layout
+
+\begin_layout Itemize
+El proceso impresor tomará las palabras almacenadas en la estructura de
+ datos compartida y las enviará a la salida estándar (desde donde se podrán
+ redireccionar)
+\end_layout
+
+\begin_layout Itemize
+Cuando el archivo designado a un hijo se acabe este debe informar al principal,
+ utilizando un mensaje de tipo especial
+\end_layout
+
+\begin_layout Itemize
+El programa deberá tratar apropiadamente todas las condiciones de error
+ previsibles: archivos que no existen, número inválido de parámetros, opciones
+ inválidas, etc.
+\end_layout
+
+\begin_layout Itemize
+El programa deberá acompañarse de un documento que detalle las pautas que
+ emplearon para su resolución, explicación de algoritmos específicos, descripció
+n de variables, constantes, funciones, problemas encontrados, comentario
+ sobre los resultados obtenidos, etc.
+ Una documentación interna adecuada permite que la documentación externa
+ sea mínima.
+ No es necesario adjuntar el código fuente en forma impresa
+\end_layout
+
+\begin_layout Section
+Información acerca del programa
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Compilación del programa
+\end_layout
+
+\begin_layout Standard
+El programa realizado para esta tarea programa tiene bloques de código realizado
+s con el estándar 
+\family typewriter
+C++ 11
+\family default
+, por lo cual requiere argumentos especiales en el compilador 
+\family typewriter
+g++
+\family default
+.
+ El programa debería compilar con el siguiente comando:
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size small
+g++ -o Count_Tag.bin -std=gnu++0x *.cpp
+\end_layout
+
+\begin_layout Subsection
+Ejecución del programa
+\end_layout
+
+\begin_layout Standard
+La aplicación se puede usar con un archivo .xml hasta n.
+ Su sintaxis va de la siguiente manera:
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size small
+./Count_Tag.bin ej.xml // Un archivo
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size small
+./Count_Tag.bin -t ej.xml // Un archivo utilizando hijo
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size small
+./Count_Tag.bin -t ej.xml ej2.xml // Dos archivos
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size small
+./Count_Tag.bin -t ej.xml ej2.xml ...
+ ej
+\emph on
+n
+\emph default
+.xml // N archivos
+\end_layout
+
+\begin_layout Subsection
+Algoritmos utilizados
+\end_layout
+
+\begin_layout Standard
+Toda la información acerca de los métodos de las clases se encuentran en
+ la carpeta 
+\family typewriter
+Documentacion/html
+\family default
+.
+ La documentación realizada con 
+\emph on
+Doxygen
+\emph default
+ se puede observar abriendo el archivo 
+\family typewriter
+index.html
+\family default
+ en un navegador web.
+\end_layout
+
+\begin_layout Subsection
+Otros
+\end_layout
+
+\begin_layout Standard
+Si una ruta no se encuentra, el programa falla.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Descripción de la tarea programada: 
+\family typewriter
+\size small
+http://os.ecci.ucr.ac.cr/ci1310/tarea1.html
+\end_layout
+
+\end_body
+\end_document
